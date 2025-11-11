@@ -1,8 +1,6 @@
 import numpy as np
 import torch
 
-torch.set_default_dtype(torch.float64)
-
 def cheap_stack(tensors, dim):
     if len(tensors) == 1:
         return tensors[0].unsqueeze(dim)
