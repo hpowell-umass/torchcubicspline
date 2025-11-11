@@ -3,8 +3,6 @@ import torch
 
 from . import misc
 
-torch.set_default_dtype(torch.float64)
-
 def _validate_input(t, X):
     if not t.is_floating_point():
         raise ValueError("t must both be floating point.")
